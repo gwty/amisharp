@@ -1,6 +1,6 @@
 AmISharp
 
-Program to check whether an image is blurry or not. Alpha Stage
+Program to check whether an image is blurry or not. [Alpha Stage]
 
 
 This program finds edges in a picture. It does so by using the fact that edges usually show a sharp change in pixel intensity.
@@ -15,3 +15,8 @@ We attempt to find if blurriness by getting the average intensity value after th
 
 
 The threshold value to say, whether the image is blurry or not, is determined experimentally.
+
+To build this, 
+Create a directory, Go to that directory in this folder, Type "cmake .." , then make it.
+
+Make sure you have openCV Libraries on your computer.

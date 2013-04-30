@@ -71,7 +71,7 @@ int main( int argc, char** argv )
         }
     }
     */
-    uchar average=cv::mean(abs_dst)[0]
+    uchar average=mean(abs_dst)[0];
     std::cout<<"The average of the edge intensity is "<<average<<std::endl;
     return 0;
 }

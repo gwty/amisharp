@@ -59,9 +59,8 @@ int main( int argc, char** argv )
 
     imshow("Demonstration",abs_dst);
     waitKey(0);
-
-    float count=0,value=0;
-    value=0;
+    
+    /*
     for( y=0; y<abs_dst.rows; y++ )
     {
         const short* dsttemp = abs_dst.ptr<short>(y);
@@ -71,6 +70,8 @@ int main( int argc, char** argv )
                 value+=dsttemp[x];
         }
     }
-    std::cout<<"The average of the edge intensity is "<<value/count<<std::endl;
+    */
+    uchar average=cv::mean(abs_dst)[0]
+    std::cout<<"The average of the edge intensity is "<<average<<std::endl;
     return 0;
 }

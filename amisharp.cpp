@@ -72,6 +72,14 @@ int main( int argc, char** argv )
     }
     */
     double average=mean(abs_dst)[0];
+    double maxval;
+    int *maxIdx=(int* )malloc(sizeof(abs_dst));
+    minMaxIdx(abs_dst, 0, &maxval, 0, maxIdx);
+
+    double blurresult=average/maxval;
     std::cout<<"The average of the edge intensity is "<<average<<std::endl;
+    std::cout<<"The maximum of the edge intensity is "<<maxval<<std::endl;
+    std::cout<<"The result of the edge intensity is "<<blurresult<<std::endl;
+    
     return 0;
 }
